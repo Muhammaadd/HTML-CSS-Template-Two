@@ -1,0 +1,96 @@
+@media (max-width:1200px)
+{
+.container{padding:0 20px;}
+/* section .container{grid-template-columns:0.5fr 2fr 1fr;} */
+}
+@media (max-width:1050px){
+.left-section{display: none;}
+#special-menu{
+position:fixed;
+background-color: white;
+top:55px;
+left: 0%;
+width: 230px;
+box-shadow: 0px 1px 5px 0px;
+background-color: var(--posts-background);
+display: block;
+}
+#special-menu .categories{margin-bottom: 10px;
+font-size: .8em;}
+#special-menu .categories:hover{
+background-color: rgba(27, 104, 247, 0.199);
+padding-left:10px;
+}
+#special-menu div + p{margin-bottom: 10px;}
+#special-menu hr + p {margin:10px 0;} 
+#special-menu .categories img {width: 35px;}
+#menuicon{display: block;}
+section .container{grid-template-columns:2fr 1fr;}
+.stories{grid-template-columns: repeat(9,calc((100% / 4) - 8px));} 
+}
+@media (min-width:850px){
+#arrow,#close{display:none;}
+.scroll::-webkit-scrollbar-thumb {
+    background-color: rgb(187, 186, 186);
+}
+.scroll:hover::-webkit-scrollbar {
+    width: 5px;
+    display: initial;
+}
+}
+@media (max-width:850px){
+.right-section{
+display: var(--display);
+position: fixed;
+right:0;
+top: 56px;
+height:calc(100vh - 55px);
+}
+.fa-solid.fa-circle-left{display: var(--display1);}
+section .container{grid-template-columns:auto;
+width: 90%;}
+.advertisementimg{width: var(--width);}
+.chat{width: var(--chatwidth);}
+}
+@media (max-width:765px){
+input[type="email"] {display: none;}
+}
+@media (max-width:670px){
+.stories{grid-template-columns: repeat(9,calc((100% / 3) - 7px));}
+/* .navbar{width:320px} */
+.posticons{padding-right: 30px;}
+}
+@media (max-width:550px){
+.createpost,.posticons,.hr{padding: 5px;}
+.postactivities img {
+width: 17px;
+height: 14px;}
+.flex2 img{margin-left: 0;}
+.stories{grid-template-columns: repeat(9,calc((100% / 2.2) - 6px));} 
+.story{height: 290px;}
+section .container{padding: 0;}
+section {margin: 0 auto;}
+}
+@media (max-width:430px){
+.stories{grid-template-columns: repeat(9,calc((100% / 2) - 6px));} 
+body{font-size: 14px;}
+.icons img{margin-right: 5px;}
+.logo{margin-right: 10px;}
+/* .navbar {
+width: 263px;
+height: 430px;
+} */
+}
+@media (max-width:380px){
+.stories{grid-template-columns: repeat(9,calc((100% / 1.8) - 6px));} 
+.posticons{flex-direction: column;}
+}
+@media (max-width:340px){
+/* .navbar {
+width: 222px;
+height: 440px;} */
+#menuicon{margin-right: 3px;}
+header .container{padding: 0 6px;}
+}
+
+
