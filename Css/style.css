@@ -21,12 +21,14 @@
     --width:0px;
     --width1:0px;
     --postsdisplay:none;
+    --rotate:rotate(0deg);
 
 }
 .dark-theme {
     --back-ground-color:#0a0a0a;
     --black-color:white;
     --posts-background:black;
+    --rotate:rotate(360deg);
 }
 .display-block{
     --display-value:block;
@@ -564,6 +566,8 @@ a.loadMore {
 #btn {
     width: 20px;
     cursor: pointer;
+    transform: var(--rotate);
+    transition: 1s ease;
 }
 .fa-solid.fa-circle-left{
     position: fixed;
